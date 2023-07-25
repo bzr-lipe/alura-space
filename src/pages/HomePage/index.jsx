@@ -1,5 +1,8 @@
-import NavBar from '../../components/Navbar';
-import Menu from '../../components/Menu';
+import NavBar from 'components/Navbar';
+import Menu from 'components/Menu';
+import Footer from 'components/Footer';
+import Gallery from 'components/Gallery';
+import Populares from 'components/Populares';
 import banner from './banner.png';
 import styles from './HomePage.module.scss';
 
@@ -15,7 +18,12 @@ export default function HomePage () {
           <img src={banner} alt='A imagem da terra vista do espaço' />
         </div>
       </section>
+      <div className={styles.galeria}>
+        <Gallery />
+        <Populares />
+      </div>
     </main>
+    <Footer />
     </>
   )
 }

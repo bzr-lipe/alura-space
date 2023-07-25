@@ -1,0 +1,37 @@
+@import '../../styles/variables';
+
+.footer {
+  box-sizing: border-box;
+  position: fixed;
+  height: 80px;
+  padding: 0 30px;
+  bottom: 0;
+  width: 100%;
+  background-color: $azul-rodape;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__lista {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+    padding: 0;
+    margin: 0;
+    a{
+      img{
+        width: 25px;
+      }
+    }
+  }
+
+  &__text {
+    font-family: $fonte-normal;
+    font-size: 16px;
+    color: $cor-do-texto;
+    padding: 0;
+    margin: 0;
+  }
+
+
+}
